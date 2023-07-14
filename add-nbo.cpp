@@ -6,11 +6,6 @@ int main() {
     FILE* file1 = fopen("thousand.bin", "rb");
     FILE* file2 = fopen("five-hundred.bin", "rb");
 
-    if (file1 == NULL || file2 == NULL) {
-        printf("파일을 열 수 없습니다.\n");
-        return 1;
-    }
-
     uint32_t num1, num2;
 
     fread(&num1, sizeof(num1), 1, file1);
